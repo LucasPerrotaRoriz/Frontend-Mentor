@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 62.5%;
+  color: var(--white);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--off-black);
+}
+
+.container {
+  width: 50rem;
+  text-align: center;
+  margin: 0 auto 3rem;
+  padding: 2.5rem 3.5rem 4rem;
+  background-color: var(--dark-grey);
+  border-radius: 1rem;
+}
+
+.social__img {  
+  width: 8.6rem;
+  margin-block: 1rem 2rem;
+  border-radius: 50%;
+}
+
+.social__name {
+  font-size: 2.4rem;
+  margin-block-end: 1rem;
+}
+
+.social__location {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-block-end: 2.5rem;
+  color: var(--green);
+}
+
+.social__job {
+  font-size: 1.4rem;
+  margin-block-end: 2.5rem;
+}
+
+.social__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.social__item {
+  margin-block-end: .5rem;
+  padding-block: 2rem;
+  background-color: var(--grey);
+  border-radius: 1rem;
+  transition: .4s;
+}
+
+.social__item:hover{
+  background-color: var(--white);
+  transform: translateY(-5px);
+}
+
+.social__item:hover .social__link {
+  color: var(--dark-grey);
+}
+
+.social__link {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--white);
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 40rem;
+  }
+}
