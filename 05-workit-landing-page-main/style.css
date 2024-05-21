@@ -154,6 +154,58 @@ body {
   color: var(--davys-grey);
 }
 
+/* ========== ABOUT  ========== */
+.about {
+  
+  padding-block: 9.6rem;
+}
+
+.about__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__photo {
+  position: absolute;
+  top: 8%;
+  left: 10%;
+}
+
+.about__person {
+  width: 47.7rem;
+}
+
+.about__box {
+  position: absolute;
+  top: 21rem;
+  left: 35%;
+  width: 73rem;
+  height: 37.5rem;
+  padding: 6.4rem;
+  background-color: var(--dark-purple);
+  color: white;
+}
+
+.about__title {
+  font-size: 5.6rem;
+  margin-block-end: 2.4rem;
+}
+
+.about__text {
+  font-size: 1.8rem;
+  line-height: 160%;
+  margin-block-end: 4rem;
+}
+
+.about__pattern {
+  position: absolute;
+  bottom: -3rem;
+  right: 2.5rem;
+  width: 15rem;
+}
+
 /* ========== BUTTONS  ========== */
 .btn {
   font-weight: 600;
@@ -185,6 +237,10 @@ body {
   background-color: var(--dark-purple);
   color: var(--eucalyptus);
   border: 1px solid var(--eucalyptus);
+}
+
+.btn-about {
+  margin-block: 0;
 }
 
 /* .feature__number {
@@ -260,6 +316,43 @@ body {
     font-size: 1.6rem;
     padding: 0;
   }
+
+  .about__person {
+    width: 35rem;
+  }
+
+  .about__box {
+    width: 50rem;
+    padding: 4.8rem 5.6rem;
+  }
+
+  .about__title {
+    font-size: 4.8rem;
+  }
+
+  .about__text {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about__container {
+    flex-direction: column;
+  }
+
+  .about__photo {
+    position: initial;
+  }
+
+  .about__person {
+    width: 25rem;
+    margin-block-end: 1.6rem;
+  }
+
+  .about__box {
+    position: initial;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -317,6 +410,17 @@ body {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .hero__img {
+    width: 35rem;
+  }
+
+  .about__title {
+    font-size: 3.2rem;
+    margin-block-end: 1.6rem;
+  }
+}
+
 @media only screen and (max-width: 420px) {
   .hero__title {
     font-size: 4rem;
@@ -324,10 +428,6 @@ body {
 
   .btn-nav {
     font-size: 1.6rem;
-  }
-
-  .hero__img {
-    width: 35rem;
   }
 }
 
