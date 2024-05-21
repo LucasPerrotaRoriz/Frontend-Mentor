@@ -1,234 +1,338 @@
 :root {
-    --black: #393939;
-    --font-heading: 'Fraunces 144pt';
-    --font-body: "Manrope", sans-serif;
+  --black: #393939;
+  --font-heading: 'Fraunces 144pt';
+  --font-body: 'Manrope', sans-serif;
 
-    --dark-purple: #24053e;
-    --eucalyptus: #44ffa1;
-    --davys-grey: #584d62;
-    --white: #ffffff;
-    --ghost-white: #fcf8ff;
+  --dark-purple: #24053e;
+  --eucalyptus: #44ffa1;
+  --davys-grey: #584d62;
+  --white: #ffffff;
+  --ghost-white: #fcf8ff;
 }
 
 /* ========== GENERAL   ========== */
 * {
-    margin: 0;
-    padding: ´0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: var(--font-body);
-    font-size: 62.5%;
+  font-family: var(--font-body);
+  font-size: 62.5%;
 }
 
-h1,h2,h3 {
-    font-family: var(--font-heading);
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 .hero__container {
-    width: 100%;
-    height: 100%;
-    padding-block: 1rem;
-    background-image: url(./assets/images/background-hero.svg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  padding-block: 1rem;
+  background-image: url(./assets/images/background-hero.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 99;
 }
 
 .container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-inline: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 2rem;
 }
 
 /* ========== HERO  ========== */
 .bg-pattern {
-    position: absolute;
+  position: absolute;
 }
 
 .bg-pattern-1 {
-    top: 7.5rem;
-    left: -20rem;
+  top: 7.5rem;
+  left: -20rem;
 }
 
 .bg-pattern-2 {
-    top: 25rem;
-    right: -6.5rem;
+  top: 25rem;
+  right: -6.5rem;
 }
 
 .nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-block: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 5rem;
 }
 
 .hero__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__title {
-    font-size: 8rem;
-    line-height: 105%;
-    margin-block: 3rem;
-    color: white;
+  font-size: 8rem;
+  line-height: 105%;
+  margin-block: 3rem;
+  color: white;
 }
 
 .hero__title span {
-    border-bottom: 3px solid var(--eucalyptus);
-}
-
-.hero__text {
-
+  border-bottom: 3px solid var(--eucalyptus);
 }
 
 .hero__img {
-    width: 767px;
+  width: 767px;
+}
+
+/* ========== FEATURES  ========== */
+.features {
+  position: relative;
+  margin-block-start: -6.5rem;
+  background-color: var(--ghost-white);
+  border-bottom-left-radius: 100% 15%;
+  border-bottom-right-radius: 100% 15%;
+  z-index: -1;
+}
+
+.features__container {
+  padding-block: 25.6rem 12.8rem;
+}
+
+.features__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-inline: 2.4rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature__number {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-block-end: 2.4rem;
+  border: 1px solid var(--dark-purple);
+  border-radius: 50%;
+}
+
+.feature__title {
+  font-size: 3.2rem;
+  margin-block-end: 1.6rem;
+  color: var(--dark-purple);
+}
+
+.feature__text {
+  font-size: 1.8rem;
+  line-height: 160%;
+  padding-inline: 3.2rem;
+  color: var(--davys-grey);
 }
 
 /* ========== BUTTONS  ========== */
 .btn {
-    font-weight: 600;
-    border: 1px solid transparent;
-}   
+  font-weight: 600;
+  border: 1px solid transparent;
+}
 
 .btn-nav {
-    font-size: 1.8rem;
-    padding-block-end: 1rem;
-    border-bottom: 3px solid var(--eucalyptus);
-    color: white;
-    transition: color .4s;
+  font-size: 1.8rem;
+  padding-block-end: 1rem;
+  border-bottom: 3px solid var(--eucalyptus);
+  color: white;
+  transition: color 0.4s;
 }
 
 .btn-nav:hover {
-    color: var(--eucalyptus);
+  color: var(--eucalyptus);
 }
 
 .btn-primary {
-    font-size: 1.6rem;
-    margin-block-end: 4rem;
-    padding: 1.75rem 2.5rem;
-    background-color: var(--eucalyptus);
-    color: var(--dark-purple);
-    transition: background-color .4s, color .4s;
+  font-size: 1.6rem;
+  margin-block-end: 4rem;
+  padding: 1.75rem 2.5rem;
+  background-color: var(--eucalyptus);
+  color: var(--dark-purple);
+  transition: background-color 0.4s, color 0.4s;
 }
 
 .btn-primary:hover {
-    background-color: var(--dark-purple);
-    color: var(--eucalyptus);
-    border: 1px solid var(--eucalyptus);
+  background-color: var(--dark-purple);
+  color: var(--eucalyptus);
+  border: 1px solid var(--eucalyptus);
 }
 
+/* .feature__number {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;  
+    font-weight: 600;
+    margin-block-end: 2.4rem;
+    border: 1px solid var(--dark-purple);
+    border-radius: 50%;
+}
+
+.feature__title {
+    font-size: 3.2rem;
+    margin-block-end: 1.6rem;
+    color: var(--dark-purple);
+}
+
+.feature__text {
+    font-size: 1.8rem;
+    line-height: 160%;
+    color: var(--davys-grey);
+} */
+
 @media only screen and (max-width: 1200px) {
-    .hero__img {
-        width: 470px;
-    }
+  .hero__img {
+    width: 470px;
+  }
 
-    .bg-pattern-1 {
-        top: 13rem;
-        left: -10rem;
-        width: 20rem;
-    }
+  .bg-pattern-1 {
+    top: 13rem;
+    left: -10rem;
+    width: 20rem;
+  }
 
-    .bg-pattern-2 {
-        top: 22rem;
-        right: -10rem;
-        width: 20rem;
-    }
+  .bg-pattern-2 {
+    top: 22rem;
+    right: -10rem;
+    width: 20rem;
+  }
+
+  .features__container {
+    padding-block: 12.8rem 9.6rem;
+  }
+
+  .features__row {
+    grid-template-columns: 60rem;
+    align-items: initial;
+    text-align: initial;
+    margin: 0;
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 1.6rem;
+  }
+
+  .feature__number {
+    width: 4.8rem;
+    height: 4.8rem;
+    font-size: 1.8rem;
+  }
+
+  .feature__title {
+    font-size: 2.8rem;
+  }
+
+  .feature__text {
+    font-size: 1.6rem;
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 750px) {
-    .hero__title {
-        font-size: 6.4rem;
-    }
+  .hero__title {
+    font-size: 6.4rem;
+  }
 
-    .btn-nav {
-        font-size: 1.6rem;
-    }
+  .btn-nav {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .features__container {
+    padding-block: 12.8rem 9.6rem;
+  }
+
+  .features__row {
+    grid-template-columns: 40rem;
+    text-align: center;
+  }
+
+  .feature {
+    grid-template-columns: 1fr;
+  }
+
+  .feature__number {
+    justify-self: center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .bg-pattern-1 {
-        top: 13rem;
-        left: -10rem;
-        width: 15rem;
-    }
+  .bg-pattern-1 {
+    top: 13rem;
+    left: -10rem;
+    width: 15rem;
+  }
 
-    .bg-pattern-2 {
-        top: 22rem;
-        right: -10rem;
-        width: 15rem;
-    }
+  .bg-pattern-2 {
+    top: 22rem;
+    right: -10rem;
+    width: 15rem;
+  }
 
-    .hero__title {
-        font-size: 4.8rem;
-    }
+  .hero__title {
+    font-size: 4.8rem;
+  }
 
-    .btn-nav {
-        font-size: 1.6rem;
-    }
+  .btn-nav {
+    font-size: 1.6rem;
+  }
 
-    .hero__img {
-        width: 40rem;
-    }
+  .hero__img {
+    width: 40rem;
+  }
 }
 
 @media only screen and (max-width: 420px) {
-    .hero__title {
-        font-size: 4rem;
-    }
+  .hero__title {
+    font-size: 4rem;
+  }
 
-    .btn-nav {
-        font-size: 1.6rem;
-    }
+  .btn-nav {
+    font-size: 1.6rem;
+  }
 
-    .hero__img {
-        width: 35rem;
-    }
+  .hero__img {
+    width: 35rem;
+  }
 }
 
-
 /*
-<section class="features">
-<div class="features__row">
-  <div class="feature">
-    <span class="feature__number">1</span>
-    <h2 class="feature__title">Actionable insights</h2>
-    <p class="feature__text">
-      Optimize your products, improve customer satisfaction and stay ahead of the competition with our product data analytics.
-    </p>
-  </div>
 
-  <div class="feature">
-    <span class="feature__number">2</span>
-    <h2 class="feature__title">Data-driven decisions</h2>
-    <p class="feature__text">
-      Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock insights hidden in your product data.
-    </p>
-  </div>
-
-  <div class="feature">
-    <span class="feature__number">3</span>
-    <h2 class="feature__title">Always affordable</h2>
-    <p class="feature__text">
-      Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees.
-    </p>
-  </div>
-</div>
-</section>
 
 <section class="about">
 <div class="about__container">
