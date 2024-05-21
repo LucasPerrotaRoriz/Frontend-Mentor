@@ -1,0 +1,40 @@
+:root {
+    --black: #393939;
+    --font-heading: 'Fraunces 144pt';
+    --font-body: "Manrope", sans-serif;
+
+    --dark-purple: #24053e;
+    --eucalyptus: #44ffa1;
+    --davys-grey: #584d62;
+    --white: #ffffff;
+    --ghost-white: #fcf8ff;
+
+    --font-weight-700: 700;
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+    --line-height-80: 5rem;
+    --line-height-64: 4rem;
+    --line-height-40: 2.5rem;
+    --line-height-32: 2rem;
+    --font-size-80: 5rem;
+    --font-size-56: 3.5rem;
+    --font-size-50: 3.125rem;
+    --font-size-32: 2rem;
+    --font-size-18: 1.125rem;
+    --font-size-16: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: ´0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-body);
+    font-size: 62.5%;
+}
+
+h1,h2,h3 {
+    font-family: var(--font-heading);
+}
