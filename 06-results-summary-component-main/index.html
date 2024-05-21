@@ -1,91 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Results summary component</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="summary__container">
+        <div class="result">
+          <h2 class="result__title">Your Result</h2>
+          <div class="result__score">
+            <p>
+              <strong>76</strong> <br />
+              of 100
+            </p>
+          </div>
+          <p class="result__message">Great</p>
+          <p class="result__text">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+        <div class="summary">
+          <h2 class="summary__title">Summary</h2>
+          <div class="tests">
+            <div class="test__results reaction">
+              <div class="test__left">
+                <img src="./assets/images/icon-reaction.svg" alt="" class="test__icon" />
+                <h3 class="test__title test__title-reaction">Reaction</h3>
+              </div>
+              <div class="test__right">
+                <p class="test__core"><strong>80</strong>/ 100</p>
+              </div>
+            </div>
   
-  <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <main>
-    <div class="container">
-      <div class="result">
-        <h2 class="result__title">
-          Your Result
-        </h2>
-        <div class="result__score">
-          <p><strong>76</strong> <br> of 100</p>
+            <div class="test__results memory">
+              <div class="test__left">
+                <img src="./assets/images/icon-memory.svg" alt="" class="test__icon" />
+                <h3 class="test__title test__title-memory">Memory</h3>
+              </div>
+              <div class="test__right">
+                <p class="test__core"><strong>92</strong>/ 100</p>
+              </div>
+            </div>
+  
+            <div class="test__results verbal">
+              <div class="test__left">
+                <img src="./assets/images/icon-verbal.svg" alt="" class="test__icon" />
+                <h3 class="test__title test__title-verbal">Verbal</h3>
+              </div>
+              <div class="test__right">
+                <p class="test__core"><strong>61</strong>/ 100</p>
+              </div>
+            </div>
+  
+            <div class="test__results visual">
+              <div class="test__left">
+                <img src="./assets/images/icon-visual.svg" alt="" class="test__icon" />
+                <h3 class="test__title test__title-visual">Visual</h3>
+              </div>
+              <div class="test__right">
+                <p class="test__core"><strong>72</strong>/ 100</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">Continue</a>
         </div>
-        <p class="result__message">
-          Great
-        </p>
-        <p class="result__text">
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
       </div>
-      <div class="summary">
-        <h2 class="result__title">
-          Summary
-        </h2>
-        <div class="tests">
-          <div class="tests__reaction">
-            <div class="tests__left">
-              <img src="./assets/images/icon-reaction.svg" alt="" class="tests__icon">
-              <h3 class="tests__title">Reaction</h3>
-            </div>
-            <div class="tests__right">
-              <p class="tests__core"><strong>80</strong>/ 100</p>
-            </div>
-          </div>
-
-          <div class="tests__reaction">
-            <div class="tests__left">
-              <img src="./assets/images/icon-memory.svg" alt="" class="tests__icon">
-              <h3 class="tests__title">Memory</h3>
-            </div>
-            <div class="tests__right">
-              <p class="tests__core"><strong>92</strong>/ 100</p>
-            </div>
-          </div>
-
-          <div class="tests__reaction">
-            <div class="tests__left">
-              <img src="./assets/images/icon-verbal.svg" alt="" class="tests__icon">
-              <h3 class="tests__title">Verbal</h3>
-            </div>
-            <div class="tests__right">
-              <p class="tests__core"><strong>61</strong>/ 100</p>
-            </div>
-          </div>
-
-          <div class="tests__reaction">
-            <div class="tests__left">
-              <img src="./assets/images/icon-visual.svg" alt="" class="tests__icon">
-              <h3 class="tests__title">Visual</h3>
-            </div>
-            <div class="tests__right">
-              <p class="tests__core"><strong>72</strong>/ 100</p>
-            </div>
-          </div>
-        </div>
-
-        <a href="#" class="btn">
-          Continue
-        </a>
-      </div>
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="#">Lucas Perrota</a>.
     </div>
-  </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Lucas Perrota</a>.
-  </div>
-</body>
+  </body>
 </html>
