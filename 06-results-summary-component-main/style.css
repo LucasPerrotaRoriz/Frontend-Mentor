@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* ========== VARIABLES ========== */
 :root {
   --light-red: hsla(0, 100%, 67%, 0.1);
   --orangey-yellow: hsla(39, 100%, 56%, 0.1);
@@ -21,6 +22,7 @@
   
 }
 
+/* ========== GENERAL ========== */
 * {
   margin: 0;
   padding: 0;
@@ -28,12 +30,11 @@
 }
 
 html {
-  font-family: 'Hanken Grotesk';
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body {
+  font-family: 'Hanken Grotesk';
   font-size: 1.8rem;
   padding: 2.4rem 4rem;
 }
@@ -50,6 +51,7 @@ body {
   grid-template-columns: 47% 53%;
 }
 
+/* ========== RESULTS ========== */
 .result {
   display: flex;
   flex-direction: column;
@@ -97,6 +99,7 @@ body {
   color: var(--light-lavender);
 }
 
+/* ========== SUMMARY ========== */
 .summary {
   display: flex;
   flex-direction: column;  
@@ -166,6 +169,7 @@ body {
   color: var(--text-blue);
 }
 
+/* ========== BUTTONS ========== */
 .btn {
   align-self: center;
   width: 27rem;
@@ -179,6 +183,7 @@ body {
   border-radius: 2rem;
 }
 
+/* ========== MEDIA QUERIES ========== */
 @media only screen and (max-width: 800px) {
   .container {
     width: 50rem;
