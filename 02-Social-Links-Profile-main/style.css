@@ -16,18 +16,18 @@
 }
 
 html {
-  font-family: 'Inter', sans-serif;
   font-size: 62.5%;
-  color: var(--white);
 }
 
 body {
+  font-family: 'Inter', sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--off-black);
+  color: var(--white);
 }
 
 .container {
