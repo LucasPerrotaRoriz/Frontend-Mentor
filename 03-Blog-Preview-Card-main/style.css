@@ -15,11 +15,11 @@
 }
 
 html {
-  font-family: 'Figtree', sans-serif;
   font-size: 62.5%;
 }
 
 body {
+  font-family: 'Figtree', sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
