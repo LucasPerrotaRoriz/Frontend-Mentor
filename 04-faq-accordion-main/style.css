@@ -19,81 +19,88 @@ html {
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
-  width: 100%;
-  height: 100vh;
-  display: flex;
+  min-height: 100vh;
+  display: grid;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
+  font-family: 'Work Sans', sans-serif;
+  background-image: url('./assets/images/background-pattern-desktop.svg');
   background-color: var(--light-pink);
-  color: var(--grayish-purple);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-.background-desktop {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-.background-mobile {
-  display: none;
-}
-
-.container {
-  max-width: 55rem;
-  margin-block: 3rem;
-  padding: 2.5rem;
-  background-color: var(--white);
-  border-radius: 1rem;
-}
-
-.faq__header {
-  display: flex;
-  gap: 2rem;
-  margin-block-end: 3rem;
-}
-
-.faq__title {
-  font-size: 3.5rem;
-  color: var(--dark-purple);
-}
-
-.tab__item {
-  margin-block-end: 2.5rem;
-  padding-block-end: 1.5rem;
-  border-bottom: 1px solid var(--light-pink);
-  overflow: hidden;
-  transition: all .4s;
-}
-
-.tab__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.tab__question {
-  font-size: 1.7rem;
-  color: var(--dark-purple);
-}
-
-.tab__icon {
-  cursor: pointer;
-}
-
-.tab__icon-plus {
+img,svg {
+  max-width: 100%;
   display: block;
 }
 
-.tab__icon-minus {
+.container {
+  width: 60rem;
+  padding: 1.5rem 2.5rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.accordion__header {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-block-end: 1rem;
+}
+
+.accordions .accordion:not(:last-child) {
+  border-bottom: 2px solid var(--light-pink);
+}
+
+.accordion {
+  padding: 1rem 0;
+}
+
+.accordion__title {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.accordion__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 1rem 0;
+  background-color: transparent;
+  color: var(--dark-purple);
+  border: none;
+  cursor: pointer;
+}
+
+.accordion__description {
+  max-height: 0;
+  background-color: var(--white);
+  overflow: hidden;
+  transition: max-height .4s ease-in-out;
+}
+
+.accordion__description p {
+  font-size: 1.6rem;
+  line-height: 120%;
+  padding-block: 1.5rem;
+  color: var(--grayish-purple);
+}
+
+.icons {
+  max-width: 3rem;
+}
+
+.minus__icon {
   display: none;
 }
 
-.tab__answer {
-  font-size: 1.5rem;
-  margin-block: 2.5rem 1.25rem;
-  transition: all .4s;
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url('./assets/images/background-pattern-mobile.svg');
+  }
 }
